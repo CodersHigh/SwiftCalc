@@ -47,6 +47,32 @@ public struct Operation {
         self.operationNodes = operationNodes
     }
     
+    public mutating func mergePriorityNode() {
+
+        var newNodes:[OperationNode] = []
+        
+        for node in self.operationNodes {
+            if node.op == .multiply || node.op == .divide {
+                let base : Double
+                if newNodes.isEmpty {
+                    base = baseNumber
+                    let newOperand = node.op.doCalc(base , node.operand)
+                    baseNumber = newOperand
+                } else {
+                    let latestNode = newNodes.removeLast()
+                    base = latestNode.operand
+                    let newOperand = node.op.doCalc(base, node.operand)
+                    newNodes.append(OperationNode(op: latestNode.op, operand: newOperand))
+                }
+            } else {
+                newNodes.append(node)
+            }
+        }
+        
+        operationNodes = newNodes
+    }
+    
+    
     public func mergeOperationNodes() {
         let value = operationNodes.reduce(baseNumber, {
             (result:Double, element:OperationNode) in
@@ -54,4 +80,6 @@ public struct Operation {
         })
         print(value)
     }
+    
+    
 }

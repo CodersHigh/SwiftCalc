@@ -59,7 +59,7 @@
                                                     <action selector="percentButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUY-KY-uJ9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-2s-30a">
+                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-2s-30a">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -112,7 +112,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnY-Yu-Kgf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIp-MI-svb">
+                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIp-MI-svb">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -165,7 +165,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqF-tf-JbU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-BI-PQN">
+                                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-BI-PQN">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -219,7 +219,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzB-qL-bP1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-2p-OR3">
+                                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-2p-OR3">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -248,7 +248,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaE-kx-toV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-TW-LOh">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-TW-LOh">
                                                 <rect key="frame" x="160" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -259,7 +259,7 @@
                                                     <action selector="pointButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZa-E9-Te7"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-3M-WhN">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-3M-WhN">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
@@ -282,6 +282,9 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="veR-Nt-2lV" firstAttribute="trailing" secondItem="SWX-SF-MqU" secondAttribute="trailing" id="ajJ-qW-052"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-kA-K45">
                                 <rect key="frame" x="16" y="68" width="288" height="60"/>

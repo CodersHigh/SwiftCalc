@@ -3,6 +3,6 @@ import Foundation
 import CalcCore
 
 
-var calc = Operation(baseNumber: 3, operationNodes: [OperationNode(op: .minus, operand: 5), OperationNode(op: .multiply, operand: 2)])
-calc.mergePriorityNode()
-let result = calc.mergeOperationNodes()
+var calc = CalcOperation(baseNumber: 3, operationNodes: [CalcOperationNode(op: .minus, operand: 5), CalcOperationNode(op: .multiply, operand: 2)])
+print(calc.operationString())
+let result = calc.calcResult()

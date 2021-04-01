@@ -17,6 +17,7 @@
 		2CACE45426098E2400A82312 /* CalcCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CACE44D26098E2400A82312 /* CalcCore.framework */; };
 		2CACE45526098E2400A82312 /* CalcCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2CACE44D26098E2400A82312 /* CalcCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2CACE45B26098E3A00A82312 /* CalcCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CACE444260984EF00A82312 /* CalcCore.swift */; };
+		2CC7160F261577A9005376C0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7160E261577A9005376C0 /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2CACE44D26098E2400A82312 /* CalcCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalcCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CACE44F26098E2400A82312 /* CalcCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalcCore.h; sourceTree = "<group>"; };
 		2CACE45026098E2400A82312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CC7160E261577A9005376C0 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				2CACE42F2609834900A82312 /* AppDelegate.swift */,
 				2CACE4312609834900A82312 /* SceneDelegate.swift */,
 				2CACE4332609834900A82312 /* CalcPadViewController.swift */,
+				2CC7160E261577A9005376C0 /* RoundButton.swift */,
 				2CACE4352609834900A82312 /* Main.storyboard */,
 				2CACE4382609834A00A82312 /* Assets.xcassets */,
 				2CACE43A2609834A00A82312 /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC7160F261577A9005376C0 /* RoundButton.swift in Sources */,
 				2CACE4342609834900A82312 /* CalcPadViewController.swift in Sources */,
 				2CACE4302609834900A82312 /* AppDelegate.swift in Sources */,
 				2CACE4322609834900A82312 /* SceneDelegate.swift in Sources */,

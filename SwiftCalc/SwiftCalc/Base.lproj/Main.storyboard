@@ -22,7 +22,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G3P-Xj-sSs">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDC-fm-wDR">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDC-fm-wDR" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <constraints>
@@ -37,7 +37,7 @@
                                                     <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzr-UP-gaq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMF-Uc-R47">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMF-Uc-R47" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -48,7 +48,7 @@
                                                     <action selector="plusMinusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQ7-Ut-mRC"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcz-Bo-xTt">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcz-Bo-xTt" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -59,7 +59,7 @@
                                                     <action selector="percentButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUY-KY-uJ9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-2s-30a">
+                                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-2s-30a" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -75,7 +75,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cR6-RX-B25">
                                         <rect key="frame" x="0.0" y="85" width="300" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKL-zy-AKZ">
+                                            <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKL-zy-AKZ" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -90,7 +90,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PyN-6J-b53"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU5-Fh-Ysz">
+                                            <button opaque="NO" tag="58" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU5-Fh-Ysz" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -101,7 +101,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjD-QH-IxV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-vS-Oed">
+                                            <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Vl-vS-Oed" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -112,7 +112,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnY-Yu-Kgf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIp-MI-svb">
+                                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIp-MI-svb" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -128,7 +128,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="tHM-ZP-9y5">
                                         <rect key="frame" x="0.0" y="170" width="300" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-0L-YUM">
+                                            <button opaque="NO" tag="54" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0c-0L-YUM" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -143,7 +143,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JMk-Xo-fOo"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-UD-bMR">
+                                            <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyr-UD-bMR" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -154,7 +154,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oqg-V9-alR"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-8m-jHn">
+                                            <button opaque="NO" tag="56" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-8m-jHn" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -165,7 +165,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OqF-tf-JbU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-BI-PQN">
+                                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-BI-PQN" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -182,7 +182,7 @@
                                         <rect key="frame" x="0.0" y="255" width="300" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfU-XU-hqU">
+                                            <button opaque="NO" tag="51" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfU-XU-hqU" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -197,7 +197,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNK-YY-xhI"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-SF-MqU">
+                                            <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-SF-MqU" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="80" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -208,7 +208,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8zG-Wf-HzG"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-zF-mbr">
+                                            <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-zF-mbr" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -219,7 +219,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzB-qL-bP1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-2p-OR3">
+                                            <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-2p-OR3" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -237,8 +237,8 @@
                                         <rect key="frame" x="0.0" y="340" width="300" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veR-Nt-2lV">
-                                                <rect key="frame" x="0.0" y="0.0" width="140" height="60"/>
+                                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veR-Nt-2lV" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="60"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <state key="normal" title="0">
@@ -248,18 +248,7 @@
                                                     <action selector="numberPadTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaE-kx-toV"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1x-TW-LOh">
-                                                <rect key="frame" x="160" y="0.0" width="60" height="60"/>
-                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                <state key="normal" title=".">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="pointButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZa-E9-Te7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-3M-WhN">
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvh-3M-WhN" customClass="RoundButton" customModule="SwiftCalc" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <constraints>
@@ -276,24 +265,25 @@
                                             </button>
                                         </subviews>
                                         <viewLayoutGuide key="safeArea" id="Z6y-Rv-eqU"/>
-                                        <constraints>
-                                            <constraint firstItem="a1x-TW-LOh" firstAttribute="width" secondItem="qvh-3M-WhN" secondAttribute="width" id="VSn-kT-lLA"/>
-                                            <constraint firstItem="a1x-TW-LOh" firstAttribute="height" secondItem="qvh-3M-WhN" secondAttribute="height" id="qmE-gD-iDp"/>
-                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="veR-Nt-2lV" firstAttribute="trailing" secondItem="SWX-SF-MqU" secondAttribute="trailing" id="ajJ-qW-052"/>
+                                    <constraint firstItem="veR-Nt-2lV" firstAttribute="trailing" secondItem="JP5-zF-mbr" secondAttribute="trailing" id="COm-ky-gig"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-kA-K45">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXX-kA-K45">
                                 <rect key="frame" x="16" y="68" width="288" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="INk-m6-yjV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G5i-St-9SQ" appends="YES" id="CQv-xH-OtJ"/>
+                                </connections>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diS-is-To7">
                                 <rect key="frame" x="16" y="20" width="288" height="28"/>
@@ -324,8 +314,13 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="G5i-St-9SQ">
+                    <connections>
+                        <action selector="deleteNumber:" destination="BYZ-38-t0r" id="CLV-sJ-EfI"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="243.75" y="59.154929577464792"/>
+            <point key="canvasLocation" x="-249.375" y="49.647887323943664"/>
         </scene>
     </scenes>
     <resources>

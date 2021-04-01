@@ -14,31 +14,52 @@ class CalcPadViewController: UIViewController {
     @IBOutlet weak var operationLabel: UILabel!
     @IBOutlet weak var currentNumberLabel: UILabel!
     
-    var currentNumber : Double = 0.0
-    var currentOperator : CalcOperator?
-    var currentOperation : CalcOperation = CalcOperation()
+    var currentNumber : Double = 0.0 { didSet { updateUI() }}
+    var currentOperator : CalcOperator? { didSet { updateUI() }}
+    var currentOperation : CalcOperation = CalcOperation() { didSet { updateUI() }}
+    
+    func updateUI() {
+        currentNumberLabel.text = String(currentNumber)
+        operationLabel.text = currentOperation.operationString()
+        if let op = currentOperator {
+            operationLabel.text = operationLabel.text! + " " + op.symbol
+        }
+        
+        if currentNumber != 0.0 {
+            clearButton.setTitle("C", for: .normal)
+        } else {
+            clearButton.setTitle("AC", for: .normal)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(deleteNumber(_:)))
+        currentNumberLabel.addGestureRecognizer(tapGesture)
     }
     
     @IBAction func numberPadTapped(_ sender: UIButton) {
         let buttonNumber = sender.tag - 50
         currentNumber = currentNumber * 10 + Double(buttonNumber)
-        
-        currentNumberLabel.text = String(currentNumber)
     }
     
     @IBAction func clearButtonTapped(_ sender: UIButton) {
+        if currentNumber != 0.0 {
+            currentNumber = 0.0
+        } else {
+            currentOperation = CalcOperation()
+        }
     }
     
     @IBAction func plusMinusTapped(_ sender: UIButton) {
         currentNumber = currentNumber * -1
-        currentNumberLabel.text = String(currentNumber)
     }
     
     @IBAction func percentButtonTapped(_ sender: UIButton) {
+        if currentNumber != 0.0 {
+            currentNumber = currentNumber / 100
+        }
     }
     
     @IBAction func operatorButtonTapped(_ sender: UIButton) {
@@ -59,30 +80,38 @@ class CalcPadViewController: UIViewController {
         }
         
         currentOperator = currentOp
-        operationLabel.text = operationLabel.text! + " " + currentOp.symbol
     }
     
     func addOperationNode() {
+        guard currentNumber != 0.0 else {
+            return
+        }
         if let currentOp = currentOperator {
             currentOperation.operationNodes.append(CalcOperationNode(op: currentOp, operand: currentNumber))
         } else {
             currentOperation.baseNumber = currentNumber
         }
-        
+        currentOperator = nil
         currentNumber = 0.0
-        currentNumberLabel.text = String(currentNumber)
-        operationLabel.text = currentOperation.operationString()
     }
     
     
     @IBAction func showResult(_ sender: UIButton) {
         addOperationNode()
-        operationLabel.text = operationLabel.text! + " ="
         
         currentNumberLabel.text = String(currentOperation.calcResult())
+        operationLabel.text = operationLabel.text! + " ="
     }
-    
-    @IBAction func pointButtonTapped(_ sender: UIButton) {
+
+    @objc
+    @IBAction func deleteNumber(_ sender: Any) {
+        guard currentNumber != 0.0 else {
+            return
+        }
+        let lastNumber = currentNumber.truncatingRemainder(dividingBy: 10.0)
+        //let shareNumber = currentNumber.formTruncatingRemainder(dividingBy: 10.0)
+        currentNumber = (currentNumber - lastNumber)/10
+        
     }
     
 }

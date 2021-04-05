@@ -114,5 +114,8 @@ class CalcPadViewController: UIViewController {
         
     }
     
+    @IBAction func historyButton(_ sender: Any) {
+        self.present(HistoryVC(), animated: true, completion: nil)
+    }
 }
 

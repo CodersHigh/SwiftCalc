@@ -99,6 +99,8 @@ class CalcPadViewController: UIViewController {
     @IBAction func showResult(_ sender: UIButton) {
         addOperationNode()
         
+        histories.append(currentOperation)
+        
         currentNumberLabel.text = String(currentOperation.calcResult())
         operationLabel.text = operationLabel.text! + " ="
     }

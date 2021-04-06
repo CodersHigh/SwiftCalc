@@ -20,6 +20,7 @@
 		2CC7160F261577A9005376C0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7160E261577A9005376C0 /* RoundButton.swift */; };
 		4502BEDF261B03D000EBF333 /* SwiftUI_HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502BEDE261B03D000EBF333 /* SwiftUI_HistoryView.swift */; };
 		4502BEE2261B04A600EBF333 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502BEE1261B04A600EBF333 /* HistoryVC.swift */; };
+		4502BEE9261C145C00EBF333 /* HistoryGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4502BEE8261C145C00EBF333 /* HistoryGlobal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		2CC7160E261577A9005376C0 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		4502BEDE261B03D000EBF333 /* SwiftUI_HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HistoryView.swift; sourceTree = "<group>"; };
 		4502BEE1261B04A600EBF333 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		4502BEE8261C145C00EBF333 /* HistoryGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryGlobal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +109,8 @@
 				2CACE42F2609834900A82312 /* AppDelegate.swift */,
 				2CACE4312609834900A82312 /* SceneDelegate.swift */,
 				2CACE4332609834900A82312 /* CalcPadViewController.swift */,
-				4502BEDE261B03D000EBF333 /* SwiftUI_HistoryView.swift */,
-				4502BEE1261B04A600EBF333 /* HistoryVC.swift */,
 				2CC7160E261577A9005376C0 /* RoundButton.swift */,
+				459F18CC261C26A200C59955 /* History */,
 				2CACE4352609834900A82312 /* Main.storyboard */,
 				2CACE4382609834A00A82312 /* Assets.xcassets */,
 				2CACE43A2609834A00A82312 /* LaunchScreen.storyboard */,
@@ -126,6 +127,16 @@
 				2CACE45026098E2400A82312 /* Info.plist */,
 			);
 			path = CalcCore;
+			sourceTree = "<group>";
+		};
+		459F18CC261C26A200C59955 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				4502BEE8261C145C00EBF333 /* HistoryGlobal.swift */,
+				4502BEDE261B03D000EBF333 /* SwiftUI_HistoryView.swift */,
+				4502BEE1261B04A600EBF333 /* HistoryVC.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +253,7 @@
 			files = (
 				2CC7160F261577A9005376C0 /* RoundButton.swift in Sources */,
 				4502BEE2261B04A600EBF333 /* HistoryVC.swift in Sources */,
+				4502BEE9261C145C00EBF333 /* HistoryGlobal.swift in Sources */,
 				2CACE4342609834900A82312 /* CalcPadViewController.swift in Sources */,
 				2CACE4302609834900A82312 /* AppDelegate.swift in Sources */,
 				4502BEDF261B03D000EBF333 /* SwiftUI_HistoryView.swift in Sources */,

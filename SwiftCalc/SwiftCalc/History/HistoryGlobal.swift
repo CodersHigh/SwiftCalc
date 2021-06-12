@@ -8,18 +8,32 @@
 import Foundation
 import CalcCore
 
-var histories : [CalcOperation] = []
+var histories : [History] = [] {
+    didSet {
+        let jsonData = try? JSONEncoder().encode(histories)
+        
+        UserDefaults.standard.set(jsonData, forKey: "histories")
+    }
+}
 
-public func getHistoryStrings() -> [String] {
+struct History: Identifiable, Equatable, Codable {
+    var id = UUID()
+    let calcOperation: CalcOperation
+    let date: Date
     
-    var historyStrings : [String] = []
-    
-    for i in 0..<histories.count{
-
-        let historyString = histories[i].operationString() + " = " + String(histories[i].calcResult())
-
-        historyStrings.append(historyString)
+    static func == (lhs: History, rhs: History) -> Bool {
+        return lhs.id == rhs.id
     }
     
-    return historyStrings
+    func getCalcOperationString() -> String {
+        return calcOperation.operationString() + " = " + String(calcOperation.calcResult())
+    }
+    
+    func getDateString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ko_kr")
+        dateFormatter.dateFormat = "yyyy년 M월 d일 a h시 m분 s초"
+        
+        return dateFormatter.string(from: date)
+    }
 }

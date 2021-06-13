@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum CalcOperator {
+public enum CalcOperator: String, Codable {
     case plus
     case minus
     case multiply
@@ -40,7 +40,7 @@ public enum CalcOperator {
     }
 }
 
-public struct CalcOperationNode {
+public struct CalcOperationNode: Codable {
     var op: CalcOperator
     var operand : Double
     
@@ -51,7 +51,7 @@ public struct CalcOperationNode {
 }
 
 
-public struct CalcOperation {
+public struct CalcOperation: Codable {
     public var baseNumber : Double
     public var operationNodes : [CalcOperationNode]
     
@@ -65,17 +65,17 @@ public struct CalcOperation {
         self.operationNodes = operationNodes
     }
     
-    public mutating func mergePriorityNode() {
-
+    public func mergePriorityNode() -> CalcOperation {
+        var newCalcOperation = self
         var newNodes:[CalcOperationNode] = []
         
         for node in self.operationNodes {
             if node.op == .multiply || node.op == .divide {
                 let base : Double
                 if newNodes.isEmpty {
-                    base = baseNumber
+                    base = newCalcOperation.baseNumber
                     let newOperand = node.op.doCalc(base , node.operand)
-                    baseNumber = newOperand
+                    newCalcOperation.baseNumber = newOperand
                 } else {
                     let latestNode = newNodes.removeLast()
                     base = latestNode.operand
@@ -87,7 +87,8 @@ public struct CalcOperation {
             }
         }
         
-        operationNodes = newNodes
+        newCalcOperation.operationNodes = newNodes
+        return newCalcOperation
     }
     
     
@@ -99,9 +100,8 @@ public struct CalcOperation {
         return value
     }
     
-    public mutating func calcResult() -> Double {
-        mergePriorityNode()
-        return mergeOperationNodes()
+    public func calcResult() -> Double {
+        return mergePriorityNode().mergeOperationNodes()
     }
     
     public func operationString() -> String {
@@ -110,5 +110,4 @@ public struct CalcOperation {
         result + " " + element.op.symbol + " " + String(element.operand)
         })
     }
-    
 }

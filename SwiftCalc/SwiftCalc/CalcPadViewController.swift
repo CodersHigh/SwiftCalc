@@ -187,6 +187,8 @@ class CalcPadViewController: UIViewController {
     }
     
     @IBAction func historyButton(_ sender: Any) {
-        self.present(HistoryVC(self), animated: true, completion: nil)
+        let presentedView = HistoryVC(self)
+        presentedView.modalPresentationStyle = .fullScreen
+        self.present(presentedView, animated: true, completion: nil)
     }
 }
